@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #12131a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+
+
+#board{
+    background-color: #ccc;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    width: 900px;
+    height: 900px;
+}
+
+.tik-tak-toe-field{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #171922;
+    color: white;
+    width: 295px;
+    height: 295px;
+    user-select: none;
+}
+.tik-tak-toe-field:hover{
+    background-color: #16171a;
+    cursor: pointer;
+}
+
+
+#player{
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.player1{
+    color: #ff5b5b;
+}
+.player2{
+    color: #5350ff;
+}
+
+button{
+    margin-top: 20px;
+    height: 50px;
+    width: 200px;
+
+    border-radius: 10px;
+    background-color: #4a4e72;
+    
+    color: #ccc;
+    font-size: 24px;
+    font-weight: 700;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #62689b;
+}
